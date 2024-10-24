@@ -1,3 +1,4 @@
+import BlurIn from "@/components/ui/blur-in";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { pricingCards } from "@/lib/constants";
@@ -13,11 +14,7 @@ export default async function Home() {
         <div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"/>
         
         <p className="text-center font-semibold text-2xl">Take your agency to the next level</p>
-
-        <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
-          <h1 className="text-9xl font-bold text-center md:text-[300px]">Astron</h1>
-        </div>
-
+        <BlurIn word="Astron" className="text-9xl font-bold text-center md:text-[300px]"/>
         {/* Contenedor para la imagen y el BorderBeam, con comportamiento responsivo */}
         <div className="relative flex justify-center items-center w-full max-w-[1200px] mx-auto px-4 md:mt-[-65px] mb-4">
           <div className="relative w-full max-w-full rounded-2xl">
